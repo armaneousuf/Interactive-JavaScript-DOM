@@ -1,0 +1,1 @@
+Added `container and mx-auto` to the parent div.
