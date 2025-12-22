@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tour of DOM</title>
+    <title>Dynamic style, getAttribute, setAttribute, innerText, innerHTML</title>
 </head>
+
 <body>
     <h1 class="first-h1">List of JavaScript fundamental topics</h1>
     <ul>
@@ -16,19 +18,8 @@
         <li>Functions</li>
     </ul>
 
-   <script>
-    const listItems = document.getElementsByTagName('li');
-
-    for (const item of listItems) {
-        console.log(item.textContent);
-        item.style.listStyle = 'none';
-    }
-
-    const heading = document.querySelector('.first-h1');
-    heading.style.background = 'red';
-    heading.style.padding = '10px';
-
-</script>
+    <script src="./script.js"></script>
 
 </body>
+
 </html>
