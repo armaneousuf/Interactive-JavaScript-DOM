@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating list using DOM</title>
+</head>
+
+<body>
+    <main id="main-container">
+        <section class="firstSection">
+            <h1>First Section with ULs</h1>
+            <ul>
+                <li>list item one</li>
+                <li>list item two</li>
+                <li>list item three</li>
+            </ul>
+        </section>
+    </main>
+
+    <script>
+        // Parent node
+        const mainContainer = document.getElementById('main-container');
+
+        // Creating new section 
+        const newSection = document.createElement('section');
+
+        // Creating header 
+        const h1 = document.createElement('h1');
+        h1.innerText = 'Languages I want to learn';
+
+        // Creating ul and li
+        const ul = document.createElement('ul');
+        const li1 = document.createElement('li');
+        li1.innerText = 'Go';
+        const li2 = document.createElement('li');
+        li2.innerText = 'Rust';
+        const li3 = document.createElement('li');
+        li3.innerText = 'TypeScript';
+
+        // Append LIs first
+
+        ul.appendChild(li1);
+        ul.appendChild(li2);
+        ul.appendChild(li3);
+
+        // Append h1 and ul then
+
+        newSection.appendChild(h1);
+        newSection.appendChild(ul);
+
+        // Append newSection to mainContainer
+        mainContainer.appendChild(newSection);
+        
+
+        // If want to move the DOM first (OPTIONAL)
+
+        // const firseSection = document.querySelector('.firstSection');
+        // firseSection.before(newSection);
+    </script>
+</body>
+
+</html>
