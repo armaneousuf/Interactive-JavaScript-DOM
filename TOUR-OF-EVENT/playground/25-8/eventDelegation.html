@@ -9,5 +9,33 @@
 </head>
 <body>
     
+    <div class="container">
+        <h1>Shopping List</h1>
+        <ol id="shopping-list">
+        
+            <li class="item">Apples</li>
+            <li class="item">Bananas</li>
+            <li class="item">Cherries</li>
+            <li class="item">Dragonfruit</li>
+        </ol>
+        <button class="btn-add-item">Add items</button>
+    </div>
+
+    <script>
+       document.querySelector('#shopping-list').addEventListener('click', function(e){
+            if (e.target.tagName === 'LI'){
+                e.target.remove();
+            }
+       })
+
+        document.querySelector('.btn-add-item').addEventListener('click', function(){
+            const ol = document.querySelector('#shopping-list');
+            const li = document.createElement('li');
+            li.classList.add('item');
+            li.innerText = 'New static fruit added'
+            ol.appendChild(li)
+        })
+    </script>
+
 </body>
 </html>
