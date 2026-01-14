@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic To-do list</title>
+</head>
+<body>
+    <h1>My To-do list</h1>
+    <input class="input-field" type="text" placeholder="Task name">
+    <button class="add-btn">Add Task</button>
+    <div class="tasks"></div>
+
+    <script>
+        document.querySelector('.add-btn').addEventListener('click', function(){
+            const inputField = document.querySelector('.input-field');
+            // console.log(inputField.value);
+            
+            const newTaskContainer = document.createElement('div')
+
+            const div = document.querySelector('.tasks');
+            
+            const checkbox = document.createElement('input');
+            checkbox.type = 'checkbox';
+
+            const taskSpan = document.createElement('span');
+            taskSpan.textContent = inputField.value;
+
+            newTaskContainer.appendChild(checkbox);
+            newTaskContainer.appendChild(taskSpan);
+            div.appendChild(newTaskContainer);
+
+            inputField.value = '';
+
+        })
+    </script>
+</body>
+</html>
