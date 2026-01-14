@@ -1,0 +1,41 @@
+<!-- 25-7 Event bubble and Stop propagating -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Bubble & stop propagating</title>
+</head>
+<style>
+    body {
+        border: 2px solid #008080;
+        margin: 15px;
+    }
+    section {
+        border: 2px solid #FF00FF;
+        margin: 15px;
+    }
+    ul {
+        border: 2px solid #94890e ;
+        margin: 15px;
+    }
+    li {
+        border: 2px solid #E37434 ;
+        margin: 15px;
+    }
+</style>
+<body>
+    <h1>Event Bubbling</h1>
+    <section>
+        <ul id="parent-list">
+            <li id="item-1">Item 1: Basic Click</li>
+            <li id="item-2">Item 2: Stop Propagation Test</li>
+            <li id="item-3">Item 3: <strong>Nested Element</strong> (Click the bold text!)</li>
+            <li id="item-4"><button>Item 4: Button Inside Li</button></li>
+            <li id="item-5">Item 5: Dynamic Item</li>
+        </ul>
+    </section>
+
+    <script src="index.js"></script>
+</body>
+</html>
