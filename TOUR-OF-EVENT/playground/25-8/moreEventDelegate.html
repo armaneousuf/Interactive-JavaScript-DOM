@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul class="list-items">
+        <li class="list">list item 1</li>
+        <li class="list">list item 2</li>
+        <li class="list">list item 3</li>
+    </ul>
+
+    <script>
+        document.querySelector('.list-items').addEventListener('click', function(e){
+            if(e.target.tagName === 'LI'){
+                alert('You click on a list item' + e.target.textContent);
+            }
+        })
+    </script>
+</body>
+</html>
