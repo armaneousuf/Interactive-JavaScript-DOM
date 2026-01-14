@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple To-do app</title>
+</head>
+<body>
+    <input type="text" class="input-area">
+    <button class="input-btn">Add Task</button>
+    <div class="container"></div>
+
+    <script>
+        document.querySelector('.input-btn').addEventListener('click', function(){
+            const inputArea = document.querySelector('.input-area');
+            const container = document.querySelector('.container');
+            const newItem = document.createElement('div');
+            newItem.innerText = inputArea.value;
+            
+            container.appendChild(newItem);
+
+            inputArea.value = '';
+
+        })
+    </script>
+</body>
+</html>
