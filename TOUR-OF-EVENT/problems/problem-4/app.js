@@ -7,3 +7,11 @@ document.querySelector('#sports').addEventListener('click', function (e) {
         target.style.color = '#fff'
     }
 })
+
+const sports = document.querySelector('#sports');
+const newElement = document.createElement('li');
+
+newElement.innerText = 'Rugby';
+newElement.setAttribute('id', 'Rugby');
+
+sports.appendChild(newElement);
