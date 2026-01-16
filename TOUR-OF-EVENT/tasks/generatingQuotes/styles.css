@@ -36,6 +36,7 @@ body {
 .container .person {
   font-size: 1.7rem;
   margin-bottom: 20px;
+  color: rgb(168, 63, 63);
 }
 
 .btn {
@@ -44,4 +45,5 @@ body {
   color: #fff;
   padding: 10px;
   font-family: "Open Sans", sans-serif;
+  cursor: pointer;
 }
