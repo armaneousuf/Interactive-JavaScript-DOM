@@ -1,0 +1,1 @@
+This folder contains some lightweight practice of JS DOM
