@@ -1,1 +1,1 @@
-This folder contains some lightweight practice of JS DOM
+Related project [payoo-mobile-banking](https://github.com/armaneousuf/payoomobilebanking)
